@@ -1,0 +1,87 @@
+---
+layout: default
+title: Events
+---
+
+
+<nav class="navbar navbar-expand-md navbar-dark">
+<div class="container-fluid">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+	</div>
+	<div class = "collapse navbar-collapse" id = "Navbar">
+		<ul class = "nav navbar-nav">
+			<li class="nav-item"><a class="nav-link" href="{{site.baseurl}}/index"><span class="fa fa-home fa-lg"></span> Home</a></li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<span class="fa fa-users fa-lg"></span> People
+				</a>
+
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+					<a class="dropdown-item" href="{{site.baseurl}}/pages/people/faculty.html">Faculty</a>
+					<a class="dropdown-item" href="{{site.baseurl}}/pages/people/students.html">Students</a>
+					<a class="dropdown-item" href="{{site.baseurl}}/pages/people/alumni.html">Alumni</a>
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<span class="fa fa-user-plus fa-lg"></span> Programs
+				</a>
+
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+					<a class="dropdown-item" href="{{site.baseurl}}/pages/programs/btech.html">B.Tech</a>
+					<a class="dropdown-item" href="{{site.baseurl}}/pages/programs/btechminor.html">B.Tech Minor</a>
+					<a class="dropdown-item" href="{{site.baseurl}}/pages/programs/mtech2yr.html">M.Tech 2 Years</a>
+					<a class="dropdown-item" href="{{site.baseurl}}/pages/programs/mtech3yr.html">M.Tech 3 Years</a>
+					<a class="dropdown-item" href="{{site.baseurl}}/pages/programs/phd.html">PhD</a>
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" role="button" id="dropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<span class="fa fa-user-plus fa-lg"></span> Admissions
+				</a>
+
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink3">
+					<a class="dropdown-item" href="{{site.baseurl}}/pages/admissions/mtechadmissions.html">M.Tech Admissions</a>
+					<a class="dropdown-item" href="{{site.baseurl}}/pages/admissions/phdadmissions.html">PhD Admissions</a>
+					<a class="dropdown-item" href="{{site.baseurl}}/pages/admissions/faqs.pdf" target = "_blank">FAQs</a>
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" role="button" id="dropdownMenuLink5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<span class="fa fa-book fa-lg"></span> Research
+				</a>
+
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink5">
+					<a class="dropdown-item" href="{{site.baseurl}}/pages/research/infrastructure.html">Infrastructure</a>
+					<a class="dropdown-item" href="{{site.baseurl}}/pages/research/projects.html">Projects</a>
+					<a class="dropdown-item" href="{{site.baseurl}}/pages/research/publications.html">Publications</a>
+				</div>
+			</li>
+
+			<li class="nav-item dropdown active">
+				<a class="nav-link dropdown-toggle" role="button" id="dropdownMenuLink4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<span class="fa fa-calendar fa-lg"></span> News &amp; Events
+				</a>
+
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink4">
+					<a class="dropdown-item" href="{{site.baseurl}}/pages/news-and-events/news.html">News</a>
+					<a class="dropdown-item" href="{{site.baseurl}}/pages/news-and-events/events.html">Events</a>
+                    <a class="dropdown-item" href="{{site.baseurl}}/pages/news-and-events/carousel.html">Others</a>
+				</div>
+			</li>
+			<li class="nav-item"><a class="nav-link" href="{{site.baseurl}}/pages/contact/contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact Us</a></li>
+		</ul>
+	</div>
+</div>
+</nav><br><br>
+
+	
+<div class = "container">
+	<h1>Others</h1><br>
+	<ul>
+		{% include listcarousel.html %}
+	</ul>
+</div>

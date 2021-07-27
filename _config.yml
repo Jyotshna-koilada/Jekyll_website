@@ -1,0 +1,5 @@
+site.baseurl: "https://sam2125.github.io/AI_website"
+# siteurl: /home/sam/jekyll-pro/AI-page-gh-pages
+markdown: kramdown
+theme: minima
+

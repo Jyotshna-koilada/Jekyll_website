@@ -1,0 +1,10 @@
+{% for post in site.posts %}
+    {% if post.category ==  "carousel-active" %}
+        <li><a href = {{ post.url | relative_url }} id="latest">{{post.title}}</a></li>
+    {% endif %}
+{% endfor %}
+{% for post in site.posts %}
+    {% if post.category ==  "carousel" %}
+        <li><a href = {{ post.url | relative_url }}>{{post.title}}</a></li>
+    {% endif %}
+{% endfor %}
